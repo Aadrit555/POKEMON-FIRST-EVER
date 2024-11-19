@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Fun Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-section">
+        <div id="pikachu">
+            <img src="pikachu.gif" alt="Pikachu Walking">
+            <p>Hi Trainer! Ready for a fun adventure?</p>
+        </div>
+        <form id="login-form">
+            <h2>Login/Sign Up</h2>
+            <input type="text" placeholder="Enter your name" id="name" required>
+            <input type="password" placeholder="Enter your password" id="password" required>
+            <button type="button" onclick="login()">Enter the World</button>
+        </form>
+    </div>
+    <div id="pokemon-world" style="display:none;">
+        <h1>Welcome to the Pokémon World!</h1>
+        <div id="pokemon-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
